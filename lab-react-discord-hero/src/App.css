@@ -1,0 +1,28 @@
+body {
+  background-color: blue;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Positions Logo on the left and Menu on the right */
+  align-items: center; /* Centers vertically if the header has a height */
+  padding: 10px 20px; /* Adds some spacing */
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center; /* Centers both Logo and Menu */
+  }
+}
+
+.content {
+  text-align: left;
+  margin-top: 80px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 100px;
+}
